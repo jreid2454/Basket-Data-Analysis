@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basket Detials</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src='./functions.js'></script>
+</head>
+<body>
+  <div id="container" style="margin-top: 30px;">
+    <p>Submit a CSV file Below</p>
+      <label>
+          Select File
+        <input type="file" id="fileToUpload" class="form-control">
+      </label>
+      <button type="button" class="btn btn-info btn-lg" id="btnUploadFile">Upload File</button>
+    </div>
+
+    <div id='totals' class='show'><h2>Total Fruits:</h2><h2 id='total'></h2></div>
+    <div id='totals' class='show'><h2>Types Of Fruits:</h2><h2 id='types'></h2></div>
+    
+    <div class='tableContainer show'>
+      <table id='tb1' class='table'>
+          <tr><th>Fruit</th><th>Quantity</th><th>>3 Days</th></tr>
+      </table>
+    </div>
+    
+    <div class='tableContainer show'>
+        <table id='tb2' class='table'>
+          <tr><th>Quantity</th><th>Fruit</th><th>Characteristic 1</th><th>Characteristic 2</th></tr>
+        </table>
+    </div>
+  
+</body>
+</html>
